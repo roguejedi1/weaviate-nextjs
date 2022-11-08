@@ -4,7 +4,7 @@ const client = weaviate.client({
     scheme: 'https',
     host: 'plants.semi.network',
     headers: {
-        'X-OpenAI-Api-Key': process.env.OPENAI_API_KEY
+        'X-OpenAI-Api-Key': process.env.NEXT_PUBLIC_OPENAI_API_KEY
     }
 });
 
