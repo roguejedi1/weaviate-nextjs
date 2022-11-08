@@ -6,8 +6,7 @@ export default async function handler(req, res){
         scheme: 'http',
         host: 'plants.semi.network',
         headers: {
-            "Access-Control-Allow-Headers": "[x-openai-api-key]*",
-            'X-OpenAI-Api-Key': "'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'",
+            'X-OpenAI-Api-Key': process.env.OPENAI_API_KEY,
         }
     });
     
