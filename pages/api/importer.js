@@ -4,7 +4,7 @@ import data from '../../plants.json'
 export default async function handler(req, res){
     const client = weaviate.client({
         scheme: 'http',
-        host: 'plants.semi.network',
+        host: 'localhost:3000',
         headers: {
             'X-OpenAI-Api-Key': process.env.NEXT_PUBLIC_OPENAI_API_KEY,
         }
